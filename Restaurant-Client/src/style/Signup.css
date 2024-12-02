@@ -1,0 +1,212 @@
+@import url('../css/resert.css');
+@import url('../css/root.css');
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+  
+  .app-signup {
+    text-align: center;
+    font-family: var(--font-family-text);
+    background-color: #f5f5f5;
+  }
+  .wrapper-container-signup {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .container-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .welcome-section, .form-section {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .welcome-section {
+    text-align: left;
+  }
+  .welcome-title {
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0 10px;
+    font-weight: 600;
+  }
+  
+  .highlight {
+    color: #1AB394;
+  }
+  
+  .logo {
+    width: 300px;
+  }
+  
+  .description {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+  
+  .copyright {
+    font-size: 12px;
+    color: #868686;
+  }
+  
+  .form-section {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .form-signup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-signup {
+    margin: auto 0;
+    color: #000000;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .checkbox-button {
+    margin: auto 0;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #868686;
+  }
+  
+  .checkbox label {
+    margin-left: 10px;
+  }
+  
+  .btn {
+    padding: 6px;
+    background-color: #1AB394;
+    /* color: white; */
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color:rgb(13, 147, 93);
+  }
+
+  .account {
+    padding-top: 5px;
+    font-size: 12px;
+    color: #888888;
+    line-height: 1.8;
+  }
+  .redirect-link {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 4px;
+    margin-top: 10px;
+    color: #888888;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .icon-social-network {
+    display:flex;
+    width: 45%;
+    padding: 13px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  .icon-social-network {
+    align-items: center;
+    justify-content: center;
+  }
+  .text-social-network {
+    padding-left: 5px;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    color: white;
+  }
+  
+  .google {
+    background-color: #db4437;
+    color: white;
+  }
+  
+  .team-info {
+    margin-top: 20px;
+    text-align: left;
+    color: #868686;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .container-signup {
+        flex-direction: column;
+        display: block;
+    }
+    .welcome-section {
+      width: 100%;
+      padding: 10px;
+  }
+  .logo {
+    margin: 0px auto;
+  }
+  .form-section {
+    width: 375px;
+    padding: 10px;
+  }
+    
+    .input-signup, .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .copyright {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-section {
+        width: 100%;
+        padding: 20px;
+    }
+    .welcome-title {
+      font-size: 22px;
+    }
+    .input-signup, .btn {
+        font-size: 12px;
+        padding: 6px;
+    }
+    .icon-social-network {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .logo {
+      width: 150px;
+  }
+  }
+
+  form input {
+    color: #000;
+}

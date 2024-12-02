@@ -1,0 +1,124 @@
+.our-menu-content {
+}
+.menu-grid {
+  display: grid;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  border: 1px solid #262525;
+  gap: 30px;
+  padding: 20px;
+}
+.title-our-menu {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.menu-item-home {
+  position: relative;
+  display: flex;
+  background-color: #262525;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+.menu-item-home:hover {
+  transform: scale(1.05);
+}
+
+
+.menu-item-home:nth-child(3),
+.menu-item-home:nth-child(4),
+.menu-item-home:nth-child(7),
+.menu-item-home:nth-child(8),
+.menu-item-home:nth-child(11),
+.menu-item-home:nth-child(12) {
+  flex-direction: row-reverse;
+}
+
+.heart-icon {
+  background-color: #430c0d;
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+  transform: translateX(-30px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.menu-item-home:hover .heart-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+.menu-item-home .heart-icon.left {
+  left: 10px;
+}
+
+.menu-item-home .heart-icon.right {
+  right: 10px;
+}
+
+.menu-grid .menu-item-home:nth-child(3),
+.menu-grid .menu-item-home:nth-child(4),
+.menu-grid .menu-item-home:nth-child(7),
+.menu-grid .menu-item-home:nth-child(8),
+.menu-grid .menu-item-home:nth-child(11),
+.menu-grid .menu-item-home:nth-child(12) {
+  position: relative;
+}
+
+.menu-grid .menu-item-home:nth-child(3) .heart-icon,
+.menu-grid .menu-item-home:nth-child(4) .heart-icon,
+.menu-grid .menu-item-home:nth-child(7) .heart-icon,
+.menu-grid .menu-item-home:nth-child(8) .heart-icon,
+.menu-grid .menu-item-home:nth-child(11) .heart-icon,
+.menu-grid .menu-item-home:nth-child(12) .heart-icon {
+  right: 10px;
+  left: unset;
+}
+
+.menu-image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.menu-details {
+  width: 50%;
+  padding: 15px;
+}
+
+.menu-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+}
+
+.menu-description {
+  font-size: 14px;
+  color: #cccccc;
+  margin: 10px 0;
+}
+
+.menu-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #b68d40;
+  margin-bottom: 10px;
+}
+
+.order-button {
+  padding: 10px 20px;
+  background-color: #b68d40;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.order-button:hover {
+  background-color: #a67c34;
+}

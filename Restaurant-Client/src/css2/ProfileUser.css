@@ -1,0 +1,294 @@
+body {
+  background-color: #121212; /* Màu nền tối */
+  color: #e0e0e0; /* Màu chữ sáng */
+  font-family: Arial, sans-serif;
+}
+
+/* Container chính */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* Thẻ chứa profile */
+.profile-card {
+  display: flex;
+  width: 900px;
+  border-radius: 12px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Sidebar trái */
+.sidebar {
+  width: 280px;
+  background-color: #252525;
+  border-right: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+}
+.sidebar h1 {
+  color: red;
+}
+
+/* Avatar người dùng */
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Avatar */
+.avatar-user {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  margin-left: 25px;
+}
+
+/* Tên người dùng */
+.user-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* Menu sidebar */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #bbbbbb;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item.active {
+  background-color: transparent; /* Không có nền đỏ khi active */
+  color: #bbbbbb; /* Màu chữ vẫn là đỏ */
+}
+
+/* Hiệu ứng hover vẫn có nền đỏ */
+.menu-item:hover {
+  background-color: #f44336;
+  color: #ffffff;
+}
+.sidebar button {
+  background-color: #f87171; /* Màu đỏ */
+  color: #fff; /* Màu chữ trắng */
+  padding: 0.5rem 1rem; /* Khoảng cách trên dưới và trái phải */
+  border-radius: 0.375rem; /* Bo góc */
+  border: none; /* Xóa viền mặc định */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.sidebar button:hover {
+  background-color: #ef4444; /* Màu đỏ đậm hơn khi hover */
+}
+
+.avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar-user {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+/* Dấu cộng ở góc dưới bên phải */
+.avatar-plus-icon {
+  position: absolute;
+  bottom: 40px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #f87171;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+/* Input file ẩn đi */
+.avatar-input {
+  display: none;
+}
+
+/* Form chứa thông tin */
+.form-container {
+  flex: 1;
+  padding: 30px;
+  background-color: #1e1e1e;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Nhóm form input */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  color: #dddddd;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.form-input:focus {
+  border-color: #f44336;
+  outline: none;
+}
+
+/* Hành động form */
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-save {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-save:hover {
+  background-color: #45a049;
+}
+
+.btn-cancel {
+  background-color: #555555;
+  color: #e0e0e0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-cancel:hover {
+  background-color: #666666;
+}
+/* Responsive cho màn hình nhỏ hơn 768px (tablet và mobile) */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #333;
+  }
+
+  .menu-item {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .avatar-user {
+    width: 120px;
+    height: 120px;
+  }
+
+  .avatar-plus-icon {
+    bottom: 20px;
+    right:25px;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+}
+
+/* Responsive cho màn hình nhỏ hơn 480px (mobile) */
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 10px;
+  }
+
+  .profile-card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-title {
+    font-size: 18px;
+  }
+
+  .form-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btn-save,
+  .btn-cancel {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .avatar-user {
+    width: 100px;
+    height: 100px;
+  }
+
+  .avatar-plus-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+}
